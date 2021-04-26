@@ -1,0 +1,27 @@
+server:
+  port: 8081
+spring:
+  profiles:
+    active: dev
+---
+person:
+  name: zhangsan
+  age: 12
+  date: 2021/4/25
+  maps: {k1: haha,k2: jiejei}
+  lists:
+    - lisi
+    - wangwu
+    - maliu
+  dog:
+    name: wangcai
+    age: 3
+server:
+  port: 8082
+spring:
+  profiles: dev
+---
+server:
+  port: 80
+spring:
+  profiles: scan
