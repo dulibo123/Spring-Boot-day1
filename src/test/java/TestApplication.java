@@ -18,6 +18,7 @@ public class TestApplication {
     Person person;
 @Test
     public void test(){
+     System.out.println("123456");
     System.out.println(person);
     }
 }
